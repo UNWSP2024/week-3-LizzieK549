@@ -39,8 +39,8 @@ if __name__ == '__main__':
 
     DogPrice = HotDiggityDog(Hotdogtype)
     Sidetype = HotDiggitySide(Sidetype)
-    tax = DogPrice * 0.7
-    Total = tax + DogPrice
+    tax = (DogPrice + Sidetype) * 0.7
+    Total = tax + DogPrice + Sidetype
 
     print(f'Hot Dog Price: ${DogPrice:.2f}')
     print(f'Tax: ${tax:.2f}')
